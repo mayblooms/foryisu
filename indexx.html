@@ -1,0 +1,498 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Qingyi's iPhone</title><style>
+:root{color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{background:#0c0c0e;display:flex;align-items:center;justify-content:center;font:15px/1.3 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",sans-serif;overflow:hidden}
+#ph{position:relative;height:min(880px,96vh);aspect-ratio:393/852;border-radius:56px;border:11px solid #1c1c1e;box-shadow:0 0 0 2px #444,0 30px 80px #000;overflow:hidden;background:#000;color:#000;user-select:none}
+@media(max-width:520px){#ph{height:100dvh;width:100vw;aspect-ratio:auto;border:0;border-radius:0;box-shadow:none}}
+.L{position:absolute;inset:0}
+#isl{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:118px;height:34px;border-radius:20px;background:#000;z-index:90}
+#sb{position:absolute;top:0;left:0;right:0;height:54px;z-index:85;display:flex;justify-content:space-between;align-items:center;padding:8px 30px 0;font-weight:600;font-size:16px;color:#fff;pointer-events:none}#sb.d{color:#000}
+#sb span{display:flex;gap:5px;align-items:center}
+#hi{position:absolute;bottom:7px;left:50%;transform:translateX(-50%);width:134px;height:5px;border-radius:3px;background:#fff;z-index:95;cursor:pointer}#ph.ap #hi{background:#000}#ph.cm #hi{background:#fff}
+#lock{background-size:cover;background-position:center;z-index:60;transition:transform .5s cubic-bezier(.3,.7,.2,1);color:#fff}#lock.gone{transform:translateY(-105%)}
+.dt{position:absolute;top:86px;width:100%;text-align:center;font-size:20px;font-weight:500;text-shadow:0 1px 8px #0006}
+.tm{position:absolute;top:104px;width:100%;text-align:center;font-size:100px;font-weight:300;letter-spacing:-3px;text-shadow:0 2px 14px #0006}
+.nt{position:absolute;left:12px;right:12px;bottom:150px;display:flex;flex-direction:column;gap:8px}
+.nc{background:rgba(255,255,255,.3);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-radius:20px;padding:11px 14px;display:flex;gap:10px;cursor:pointer;color:#fff;animation:up .5s both}
+.nc i{width:36px;height:36px;border-radius:9px;background:#07c160;display:flex;align-items:center;justify-content:center;font-style:normal;flex:none}
+.nc b{display:flex;justify-content:space-between}.nc small{font-weight:400;opacity:.8}
+@keyframes up{from{opacity:0;transform:translateY(20px)}}
+.ctl{position:absolute;bottom:50px;width:50px;height:50px;border-radius:50%;background:rgba(40,40,40,.5);backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;font-size:22px;cursor:pointer}
+#fl.on{background:#fff;box-shadow:0 0 40px 12px #fff9}
+.sw{position:absolute;bottom:62px;width:100%;text-align:center;font-size:14px;opacity:.85;animation:bl 2s infinite}@keyframes bl{50%{opacity:.4}}
+#pw{position:absolute;inset:0;z-index:70;background:rgba(0,0,0,.55);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);color:#fff;display:flex;flex-direction:column;align-items:center;padding-top:110px;opacity:0;pointer-events:none;transition:.25s}#pw.o{opacity:1;pointer-events:auto}
+#dots{display:flex;gap:16px;margin:22px 0 34px}#dots i{width:13px;height:13px;border:1.5px solid #fff;border-radius:50%}#dots i.f{background:#fff}
+.pk{display:grid;grid-template-columns:repeat(3,72px);gap:14px}.pk b{height:72px;border-radius:50%;background:rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:300;cursor:pointer}.pk b:active{background:rgba(255,255,255,.5)}
+#home{background-size:cover;background-position:center;z-index:10;color:#fff}
+.g{display:grid;grid-template-columns:repeat(4,1fr);gap:22px 6px;padding:78px 18px 0;text-align:center;font-size:11px}
+.ic{width:60px;height:60px;border-radius:14px;margin:0 auto 5px;display:flex;align-items:center;justify-content:center;font-size:30px;cursor:pointer;box-shadow:0 2px 6px #0004}.g>div{cursor:pointer;text-shadow:0 1px 4px #0008}
+.dock{position:absolute;left:12px;right:12px;bottom:26px;height:88px;border-radius:30px;background:rgba(255,255,255,.28);backdrop-filter:blur(24px);display:flex;justify-content:space-around;align-items:center}
+.pd{position:absolute;bottom:124px;width:100%;text-align:center;letter-spacing:6px;font-size:9px;opacity:.8}
+#app{position:absolute;inset:0;z-index:20;background:#fff;transform:scale(.8);opacity:0;pointer-events:none;transition:.3s;border-radius:40px;overflow:hidden}#app.o{transform:none;opacity:1;pointer-events:auto;border-radius:0}
+.v{position:absolute;inset:0;display:flex;flex-direction:column;padding-top:54px;padding-bottom:var(--kb,0px);background:#fff;transition:padding .25s}
+.hd{display:flex;align-items:center;justify-content:space-between;padding:4px 14px;min-height:44px;font-weight:600;font-size:17px}.hd a{color:#007aff;font-weight:400;cursor:pointer;min-width:60px}.hd span{min-width:60px;text-align:right}
+.bd{flex:1;overflow:auto;padding-bottom:28px}
+.big{font-size:32px;font-weight:700;padding:2px 16px 8px}
+.row{display:flex;gap:12px;align-items:center;padding:10px 16px;border-bottom:.5px solid #e5e5ea;cursor:pointer}
+.m{flex:1;min-width:0}.m div:first-child{font-weight:600}.m div+div{color:#8e8e93;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rt{font-size:12px;color:#8e8e93;text-align:right}
+.av{border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:600;font-size:13px;overflow:hidden}
+.wx .av{border-radius:8px}
+.tab{display:flex;justify-content:space-around;padding:8px 0 26px;border-top:.5px solid #ddd;font-size:11px;color:#8e8e93;background:#f9f9f9}
+.msgs{background:#ededed;flex:1;overflow:auto;padding:6px 0 14px}
+.r{display:flex;gap:8px;margin:8px 10px;align-items:flex-start}.r.me{justify-content:flex-end}
+.bub{background:#fff;padding:8px 11px;border-radius:8px;max-width:232px;word-break:break-word;font-size:15px;white-space:pre-wrap}.me .bub{background:#95ec69}
+.r small{display:block;color:#888;font-size:11px;margin-bottom:2px}
+.dsep,.tsep{text-align:center;color:#999;font-size:12px;margin:10px 16px}.dsep{font-weight:600}
+.bar{display:flex;gap:8px;align-items:center;padding:8px 10px;background:#f7f7f7;border-top:.5px solid #ddd;font-size:22px;min-height:54px}
+.inp{flex:1;background:#fff;border-radius:6px;padding:8px 10px;font-size:15px;min-height:36px;color:#000}.inp.on{outline:2px solid #07c160}
+.snd{background:#07c160;color:#fff;font-size:14px;padding:7px 12px;border-radius:6px;cursor:pointer}
+.chip{margin:auto;background:#007aff;color:#fff;padding:9px 18px;border-radius:18px;font-size:15px;cursor:pointer}
+.ro{margin:auto;color:#999;font-size:13px}
+.typ{display:inline-flex;gap:4px;padding:12px}.typ i{width:7px;height:7px;border-radius:50%;background:#999;animation:bl 1s infinite}.typ i:nth-child(2){animation-delay:.2s}.typ i:nth-child(3){animation-delay:.4s}
+#kb{position:absolute;left:0;right:0;bottom:0;height:268px;background:#d1d3d9;z-index:40;transform:translateY(100%);transition:.25s;padding:10px 4px;display:flex;flex-direction:column;gap:9px;align-items:center;font-size:12px;color:#555}#kb.o{transform:none}
+#kb div{display:flex;gap:5px}#kb span{background:#fff;border-radius:5px;width:32px;height:42px;display:flex;align-items:center;justify-content:center;font-size:19px;color:#000;box-shadow:0 1px 0 #888;cursor:pointer}#kb .w{width:180px}
+.tw{padding:10px 16px;border-bottom:.5px solid #e5e5ea;display:flex;gap:10px}.tw p{margin:3px 0 6px;white-space:pre-wrap}.tw small{color:#6b7480;display:block}
+.fab{position:absolute;right:18px;bottom:46px;width:54px;height:54px;border-radius:50%;background:#1d9bf0;color:#fff;font-size:24px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px #0004;cursor:pointer;z-index:5}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}.grid3 div{aspect-ratio:1;background-size:cover;background-position:center;cursor:pointer}
+.card img{width:100%;aspect-ratio:1;object-fit:cover;display:block}.card{margin-bottom:14px}.card>div{padding:6px 14px}
+.heart{font-size:24px;cursor:pointer}
+.note{padding:12px 16px;border-bottom:.5px solid #e5e5ea;cursor:pointer}.note small{color:#8e8e93}
+.pre{white-space:pre-wrap;padding:6px 18px;font-size:16px;line-height:1.45}
+.ph3{position:absolute;inset:0;background:#000;z-index:30;display:flex;flex-direction:column;color:#fff;padding-top:54px}
+.ph3 .im{flex:1;background-size:contain;background-repeat:no-repeat;background-position:center}
+.pl{display:flex;gap:12px;overflow:auto;padding:0 16px}.pl div{flex:none;width:136px}.pl .cv{width:136px;height:136px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:46px;pointer-events:none}.pl p{font-size:13px;margin-top:4px;pointer-events:none}
+.h2{font-size:21px;font-weight:700;padding:16px 16px 8px}
+.cvs{width:48px;height:48px;border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:22px;flex:none}
+#mp{position:absolute;left:10px;right:10px;bottom:84px;background:#f2f2f7;border-radius:16px;box-shadow:0 4px 20px #0005;z-index:25;visibility:hidden;padding:8px;display:none}
+#mp iframe{width:100%;border:0;border-radius:12px;margin-top:6px}
+#call{position:absolute;inset:0;z-index:80;background:linear-gradient(#3a3d52,#16171f);color:#fff;display:none;flex-direction:column;align-items:center;padding:90px 20px 40px}#call.o{display:flex}
+.cb{width:66px;text-align:center;font-size:11px;cursor:pointer}.cb i{display:flex;width:66px;height:66px;border-radius:50%;background:rgba(255,255,255,.18);align-items:center;justify-content:center;font-style:normal;font-size:26px;margin-bottom:4px}.cb.on i{background:#fff;color:#000}
+.cg{display:grid;grid-template-columns:repeat(3,66px);gap:16px 30px;margin-top:auto}
+.red{width:68px;height:68px;border-radius:50%;background:#ff3b30;display:flex;align-items:center;justify-content:center;font-size:28px;margin:18px auto 0;cursor:pointer}.grn{background:#34c759}
+#ctr{width:100%;flex:1;overflow:auto;margin:14px 0;font-size:14px}#ctr p{margin:5px 0;padding:6px 10px;background:rgba(255,255,255,.12);border-radius:12px;width:fit-content;max-width:85%}#ctr p.q{margin-left:auto;background:rgba(10,132,255,.5)}
+#cam{position:absolute;inset:0;z-index:75;background:#000;display:none;flex-direction:column;color:#fff}#cam.o{display:flex}
+#toast{position:absolute;top:64px;left:50%;transform:translateX(-50%);background:#222e;color:#fff;padding:8px 14px;border-radius:16px;z-index:99;font-size:13px;opacity:0;transition:.3s;pointer-events:none;max-width:85%;text-align:center}#toast.o{opacity:1}
+input.s{width:calc(100% - 32px);margin:4px 16px 8px;padding:8px 12px;border:0;border-radius:10px;background:#eeeef0;font-size:16px}
+.seg{display:flex;margin:4px 16px 8px;background:#eeeef0;border-radius:9px;padding:2px}.seg b{flex:1;text-align:center;padding:5px;border-radius:7px;font-weight:500;cursor:pointer}.seg b.on{background:#fff;box-shadow:0 1px 3px #0002}
+.ud{width:9px;height:9px;border-radius:50%;background:#007aff;flex:none}
+</style></head><body>
+<div id="ph">
+<div id="isl"></div>
+<div id="sb"><div>2:41</div><span><svg width="18" height="12" fill="currentColor"><rect y="8" width="3" height="4" rx="1"/><rect x="5" y="5" width="3" height="7" rx="1"/><rect x="10" y="2" width="3" height="10" rx="1"/><rect x="15" width="3" height="12" rx="1"/></svg><svg width="17" height="12" viewBox="0 0 17 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 4a10 10 0 0115 0M4 7a6 6 0 019 0"/><circle cx="8.5" cy="10" r="1" fill="currentColor"/></svg><svg width="27" height="13" fill="none"><rect x=".5" y=".5" width="22" height="12" rx="4" stroke="currentColor" opacity=".5"/><rect x="2" y="2" width="19" height="9" rx="2.5" fill="currentColor"/><rect x="24" y="4" width="2" height="5" rx="1" fill="currentColor" opacity=".5"/></svg></span></div>
+
+<div id="home" class="L"><div class="g" id="grid"></div><div class="pd">● ○</div><div class="dock" id="dock"></div></div>
+<div id="app"></div>
+<div id="mp"></div>
+
+<div id="lock" class="L" onclick="if(!event.target.closest('.nt,.ctl'))unlock()">
+<div class="dt">Friday, December 11</div><div class="tm">2:41</div>
+<div class="nt"><div class="nc" onclick="unlock('s')"><i>💬</i><div style="flex:1"><b>Ren Susu<small>2:41 PM</small></b>helloooo busy boy</div></div><div class="nc" style="animation-delay:.2s" onclick="unlock('Y')"><i>💬</i><div style="flex:1"><b>Qingyu<small>1:21 PM</small></b>New message</div></div></div>
+<div class="ctl" id="fl" style="left:44px" onclick="this.classList.toggle('on')">🔦</div>
+<div class="sw">Swipe up to unlock</div>
+<div class="ctl" style="right:44px" onclick="$('#cam').classList.add('o');ph.classList.add('cm')">📷</div>
+</div>
+<div id="pw"><div>Enter Passcode</div><small style="opacity:.6;margin-top:4px">Hint: 2506</small><div id="dots"></div><div class="pk" id="pk"></div><p style="margin-top:26px;cursor:pointer" onclick="key('x')">Cancel</p></div>
+<div id="cam"><div style="flex:1;background-size:cover;background-position:center;margin-top:54px" id="vf"></div><div style="display:flex;justify-content:space-around;align-items:center;height:130px;padding-bottom:20px"><span onclick="closeCam()" style="cursor:pointer">✕ Close</span><div onclick="shutter()" style="width:68px;height:68px;border-radius:50%;border:4px solid #fff;background:#fff;box-shadow:inset 0 0 0 4px #000;cursor:pointer"></div><span id="th" style="width:46px;height:46px;border-radius:8px;background-size:cover"></span></div></div>
+<div id="kb"></div>
+<div id="call"></div>
+<div id="toast"></div>
+<div id="hi" onclick="hiTap()"></div>
+</div>
+<script>
+const IM=/*IMGS*/{};
+const $=(s,e=document)=>e.querySelector(s),sleep=ms=>new Promise(r=>setTimeout(r,ms)),ph=$('#ph');
+const bg=n=>`background-image:url(${IM[n]});background-size:cover;background-position:center`;
+const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const NM={q:'Qingyi',s:'Ren Susu',L:'Lai Yi',Y:'Qingyu',Z:'Head Nurse Zhou',C:'Xiao Chen (Resident)',W:'Nurse Wang',G:'Surgery 6F'};
+const AV={q:{c:'#fff'},s:{i:8},L:{c:'#5fa88a',t:'LY'},Y:{c:'#b98a5a',t:'QY'},Z:{c:'#6aa3d9',t:'Z'},C:{c:'#b88ac9',t:'XC'},W:{c:'#d08a5a',t:'W'},G:{c:'#8e8e93',t:'👥'},sevenone:{i:7},doublefour:{i:8}};
+const av=(k,s=40)=>{const a=AV[k]||{};return `<div class="av" style="width:${s}px;height:${s}px;${a.i?bg(a.i):'background:'+(a.c||'#999')+(k=='q'?';border:1px solid #ddd':'')}">${a.i?'':a.t||''}</div>`};
+let cur='',toastT;
+function toast(t){const e=$('#toast');e.textContent=t;e.classList.add('o');clearTimeout(toastT);toastT=setTimeout(()=>e.classList.remove('o'),2200)}
+function sbm(d){$('#sb').className=d?'d':''}
+/* ---------- lock / home ---------- */
+$('#lock').style.cssText+=bg(1);$('#home').style.cssText+=bg(2);$('#vf').style.cssText+=bg(12);
+$('#pk').innerHTML=[1,2,3,4,5,6,7,8,9,'',0,''].map(k=>k===''?'<span></span>':`<b onclick="key('${k}')">${k}</b>`).join('');
+let pin='',tgt=null;
+const dots=()=>$('#dots').innerHTML=[0,1,2,3].map(i=>`<i class="${i<pin.length?'f':''}"></i>`).join('');
+function unlock(t){tgt=t||null;pin='';dots();$('#pw').classList.add('o')}
+function key(k){if(k=='x'){$('#pw').classList.remove('o');return}if(pin.length>=4)return;pin+=k;dots();if(pin.length==4)setTimeout(()=>{if(pin=='2506'){$('#pw').classList.remove('o');$('#lock').classList.add('gone');sbm(0);if(tgt){W.v=tgt;setTimeout(()=>open('wx'),350)}}else{pin='';dots();toast('Wrong passcode')}},160)}
+document.addEventListener('keydown',e=>{if(e.key=='Enter'&&!$('#lock').classList.contains('gone'))unlock()});
+let y0=0;$('#lock').addEventListener('pointerdown',e=>y0=e.clientY);$('#lock').addEventListener('pointerup',e=>{if(y0-e.clientY>60)unlock()});
+function hiTap(){if(cur)home();else if(!$('#lock').classList.contains('gone'))unlock()}
+function closeCam(){$('#cam').classList.remove('o');ph.classList.remove('cm');if(cur=='cam')home()}
+function shutter(){const v=$('#vf');v.style.filter='brightness(3)';setTimeout(()=>v.style.filter='',120);$('#th').style.cssText=bg(12)}
+const APPS=[['Instagram','ig','📸','linear-gradient(45deg,#feda75,#d62976,#4f5bd5)'],['X','x','𝕏','#000'],['Notes','nt','📝','#ffd60a'],['Photos','pt','🌸','#fff'],['Music','mu','🎵','linear-gradient(#fc5c7d,#fa233b)'],['Weather','wt','⛅','linear-gradient(#4a90e2,#1e5fb4)'],['Camera','cam','📷','#999']];
+const DOCK=[['Phone','ph','📞','#34c759'],['WeChat','wx','💬','#07c160'],['Safari','sf','🧭','#fff'],['Mail','ml','✉','#1a8cff']];
+const ico=a=>`<div onclick="open('${a[1]}')"><div class="ic" style="background:${a[3]}">${a[2]}</div>${a[0]}</div>`;
+$('#grid').innerHTML=APPS.map(ico).join('');$('#dock').innerHTML=DOCK.map(a=>`<div onclick="open('${a[1]}')"><div class="ic" style="background:${a[3]};margin:0">${a[2]}</div></div>`).join('');
+function open(n){if(n=='cam'){$('#cam').classList.add('o');ph.classList.add('cm');cur='cam';return}cur=n;rr();$('#app').classList.add('o');ph.classList.add('ap');sbm(1);$('#mp').style.visibility=n=='mu'?'visible':'hidden';if(n=='wx'&&W.v=='s')enterSusu()}
+function home(){if(cur=='cam'){closeCam();cur=''}cur='';$('#app').classList.remove('o');ph.classList.remove('ap','cm');sbm(0);hideKB();$('#mp').style.visibility='hidden'}
+function rr(){const sc=$('#app .bd')?$('#app .bd').scrollTop:0;$('#app').innerHTML=R[cur]();const b=$('#app .bd');if(b)b.scrollTop=KS[cur]??0;}
+const KS={};function keep(){const b=$('#app .bd');if(b)KS[cur]=b.scrollTop}
+const hd=(l,t,r='')=>`<div class="hd"><a ${l[1]?`onclick="${l[1]}"`:''}>${l[0]||''}</a><b>${t}</b><span>${r}</span></div>`;
+/* ---------- keyboard (scripted autotype) ---------- */
+$('#kb').innerHTML=['qwertyuiop','asdfghjkl','zxcvbnm'].map(r=>`<div>${[...r].map(c=>`<span onclick="kbTap()">${c}</span>`).join('')}</div>`).join('')+'<div><span class="w" onclick="kbTap()">space</span><span style="width:90px" onclick="kbTap()">return</span></div><div>Tap the keyboard to type the scripted text</div>';
+let kt=null;
+function showKB(text,el,done){kt={text,el,done,on:0};$('#kb').classList.add('o');$('#app').style.setProperty('--kb','268px');const m=$('#msgs');if(m)m.scrollTop=1e6}
+function hideKB(){$('#kb').classList.remove('o');$('#app').style.setProperty('--kb','0px');kt=null}
+async function kbTap(){if(!kt||kt.on)return;kt.on=1;const{text,el,done}=kt;for(let i=1;i<=text.length;i++){el.textContent=text.slice(0,i);await sleep(22)}done(text)}
+/* ---------- parse helpers ---------- */
+function parse(s){let t='';const o=[];for(const l of s.trim().split('\n')){if(l[0]=='#')o.push({d:l.slice(1)});else if(l[0]=='@')t=l.slice(1);else{const i=l.indexOf('|');o.push({w:l.slice(0,i),x:l.slice(i+1),t})}}return o}
+const capQ=x=>x.replace(/(^|[.!?]\s+)([a-z])/g,(_,a,b)=>a+b.toUpperCase()).replace(/\bi\b/g,'I');
+const fx=(k,m)=>k=='s'?(m.w=='q'?capQ(m.x):m.x.toLowerCase()):m.x;
+/* ---------- WeChat data ---------- */
+const CH={
+s:{n:'Ren Susu',h:parse(`#Fri, Sept 18 · 10:09 PM
+#Friend request accepted.
+@10:09 PM
+q|Mr. Solitary is here
+s|omg you have a profile pic
+s|and it's a blank white square
+q|it's clean
+@10:10 PM
+s|it's a clinic wall
+q|yeah it is
+s|lol. do you work nights
+q|I work whenever someone's bleeding
+@10:11 PM
+q|sorry. that sounded better in my head
+s|it was fine. just a little dramatic
+q|it's the nicest thing anyone's said to me this week
+s|this week? it's friday night
+q|i didn’t say it’s saturday night
+#Mon, Oct 5 · 1:42 AM
+@1:42 AM
+q|you ok? haven't heard from you since friday
+@1:52 AM
+q|no pressure. I know you're busy. I just wanted to say the pork was good
+@1:55 AM
+q|did the uni keeps you busy?
+@2:58 AM
+q|hello?
+#Mon, Dec 7 · 12:20 AM
+@12:20 AM
+s|hey
+q|you're 10 feet away
+s|I know. it's easier like this
+s|you look amazing. like your potrait. it's been above my bed since September
+@12:21 AM
+q|Susu. why did you stop answering
+s|not tonight
+q|ok
+@12:22 AM
+s|I'll tell you when I can. I promise
+q|you don't have to explain. I'm just glad you're here
+s|you're being nice and it's making this harder
+@12:23 AM
+q|harder how
+s|never mind. I want a ribbon
+q|a ribbon
+@12:24 AM
+s|on the brace. it looks good. make it pretty`)},
+Y:{n:'Qingyu',h:parse(`#Fri, Sept 25 · 8:22 PM
+@8:22 PM
+q|happy mid autumn ge
+Y|you answered my text in under a day. who is this
+Y|lotus paste ones, mom made too many. come home
+@8:25 PM
+q|can't. on call
+Y|you sound happier
+q|you can't sound anything over text
+@8:26 PM
+Y|I can. what happened
+q|nothing. met someone online. she’s a bit weird. no, she’s cute.
+Y|who???? when can i meet her`)},
+L:{n:'Lai Yi',h:parse(`#Fri, Sept 11 · 1:08 AM
+@1:08 AM
+L|young master, are you still in the clinic
+L|the car is out front or are you sleeping in the call room again
+@1:12 AM
+q|give me 10 min
+L|you said 10 min 40 min ago
+q|bed 6 ate breakfast
+@1:13 AM
+L|I KNOW. the whole floor knows. his wife told the cleaning lady you're "cold"
+q|I'm not cold I'm tired
+L|at 1am those look the same. 5 more minutes and I'm leaving without you
+@1:15 AM
+q|ok
+L|you typed ok and you're still writing a note aren't you
+q|no
+@1:16 AM
+L|i’ll wait`)},
+G:{n:'Surgery 6F (do not mute)',grp:1,h:parse(`#Tue, Sept 22 · 8:10 PM
+@8:10 PM
+W|reminder: ballroom night Thursday 7pm, rec room. Dr. Murong you're signed up
+@8:12 PM
+q|I never signed up
+W|we signed you up. you said yes in the elevator
+@8:13 PM
+q|I just said "mm."
+C|I'll partner you
+@8:14 PM
+q|no
+Z|he's doing the tango. I saw the roster
+#Mon, Dec 14 · 8:12 AM
+@8:12 AM
+W|Dr. Murong said "good morning" to me today and then "have a good day". who replaced him
+C|he left at 6pm sharp on Friday. 6pm
+Z|he told a family member "the surgery went well" with a smile
+@8:13 AM
+q|the surgery went well :)
+W|he's doing it again`)}};
+/* live (interactive) scenes: Susu speaks first, then waits for Qingyi's turn */
+const SC=[
+{d:'Mon, Dec 21 · 2:41 PM',m:parse(`@2:41 PM
+s|helloooo busy boy
+q|hiii, patient just left. I have 8 minutes before the next one
+q|did you eat lunch
+s|yes. look left
+@2:42 PM
+q|left of what
+s|your left. the window
+@2:44 PM
+q|what are you doing here? how can you get here
+s|hehehehe
+q|Susu
+q|you're supposed to be on the couch with your leg up
+@2:45 PM
+s|that's not a rule
+q|it's rule 2.5. I just made it
+s|you can't make rules in your own house. I checked. I wrote the sticky note
+@2:46 PM
+q|how did you get here
+s|Lai Yi. before you start. I sat the whole time. I used the ramp. did you know you have a ramp. it's very nice
+q|what happened to your hand? where’s the cast i have put?
+s|crutch blisters. I wrapped them myself with the gauze from your bag
+q|it's not sterile
+@2:47 PM
+s|it’s about to heal anyway
+q|open your hand
+@2:48 PM
+s|you're 3 feet away. through glass. you can't see it
+q|I'm opening the window
+s|you did the face
+q|what face
+@2:49 PM
+s|the one where you pretend you're not smiling. I've only seen it in the photo. it's worse in person
+q|I'm typing. you can't see my face
+s|I'm looking right at you. you're typing with your mouth doing that
+@2:50 PM
+q|I'm glad you came, but you need more rest
+s|I brought you something, a sweet potato. the man by the gate remembered me. he said "where's the doctor." I said "working." he said "tell him he's not eating enough"
+q|Which man?
+@2:51 PM
+s|Can you focus on the important part of the story?
+q|I am. Who was he?
+s|I'm not telling you.
+q|Why not?
+s|Because you're making that face again.
+@2:52 PM
+q|Fine. I'll find out who he is myself. My next patient will be here in two minutes. Stay on that bench. Don't try to walk anywhere. I'll bring you a blanket when I'm done.
+s|There's a pigeon sitting next to me. He's judging me.
+@2:53 PM
+q|Don't talk to the pigeon.
+s|Too late. I already told him about you.
+q|What did you tell him?
+@2:54 PM
+s|That you're my doctor.
+q|And what did he say?
+s|He looked at me and went, "Sure."
+q|Even the pigeon doesn't believe you.
+s|Wow. You're taking his side now?
+@2:55 PM
+q|Stay there, Susu.
+s|I'm staying. Go see your patient.`)},
+{d:'Mon, Dec 21 · 2:56 PM',m:parse(`@2:56 PM
+q|where are you? I call and you didn’t answer.
+q|15 minutes. then I'm done early. I'm walking you home
+s|it's a taxi ride
+@2:57 PM
+q|I'm walking you in the taxi
+s|that's not a thing
+q|it is now
+@2:58 PM
+s|I'll wait. I'm good at it now
+q|that's my line
+s|I borrowed it. you can have it back when I'm done
+q|keep it
+q|and Susu
+@2:59 PM
+s|yes
+q|thank you for coming, go home safe`)},
+{d:'Tue, Dec 22 · 8:44 PM',call:1,m:parse(`@8:44 PM
+q|the rehab department had one in the back they were going to scrap. I had it rebuilt. the seat turns 360. one brake locks. the footplate flips up so your knee stays supported
+@8:47 PM
+s|you ordered a dance wheelchair
+q|I only had it modified
+s|there is no difference. you are so… creative and I love, um, the creativity
+@8:48 PM
+q|you were going to say something
+s|I was going to say engineering
+q|I know you lying
+s|I don’t
+q|I'm putting the music on. Piazzolla. I checked the volume against the neighbors
+@8:49 PM
+s|you checked the neighbors
+q|they're not home
+q|come to the living room
+@8:50 PM
+s|bring the shoes
+q|they're by the window. next to the gentian`)}];
+let sc=-1,li=0,wait=null,busy=0,typing=0,fin=0,done=0,tp='',unread={s:1,Y:1};
+const W={v:'l'};
+function enterSusu(){unread.s=0;if(sc<0){sc=0;li=0;CH.s.h.push({d:'▸ Interactive story begins · history above is read-only'},{d:SC[0].d});pump()}else drawChat()}
+async function pump(){if(busy)return;busy=1;const L=SC[sc].m;while(li<L.length){const m=L[li];if(m.w=='q'){wait=m;break}typing=1;drawChat();await sleep(650+Math.min(m.x.length*16,1300));typing=0;CH.s.h.push(m);li++;drawChat();await sleep(300)}
+if(li>=L.length&&!wait)fin=1;busy=0;drawChat()}
+function next(){if(SC[sc].call){fin=0;done=1;drawChat();setTimeout(ring,1400);return}sc++;li=0;fin=0;if(SC[sc].call2)0;CH.s.h.push({d:SC[sc].d});if(sc==2)logCall({d:'Dec 22',t:'3:20 PM',n:'s',ty:'o',du:'',k:'c1'});drawChat();pump()}
+function inpTap(){if(!wait||tp)return;const t=capQ(wait.x);showKB(t,$('#inp'),x=>{tp=x;drawBar()})}
+function send(){if(!wait||!tp)return;CH.s.h.push(wait);wait=null;tp='';hideKB();li++;drawChat();pump()}
+function chatBody(k){let last='',o='';for(const m of CH[k].h){if(m.d!==undefined){o+=`<div class="dsep">${m.d}</div>`;last='';continue}if(m.t&&m.t!==last){o+=`<div class="tsep">${m.t}</div>`;last=m.t}const me=m.w=='q';o+=`<div class="r ${me?'me':''}">${me?'':av(m.w,38)}<div>${CH[k].grp&&!me?`<small>${NM[m.w]}</small>`:''}<div class="bub">${esc(fx(k,m))}</div></div>${me?av('q',38):''}</div>`}return o}
+function barHTML(k){if(k!='s'||sc<0)return `<div class="ro">History · read-only</div>`;if(fin)return `<div class="chip" onclick="next()">Continue ▸</div>`;if(done)return `<div class="ro">End of the available story</div>`;return `<span>🎙</span><div id="inp" class="inp ${wait&&!tp?'on':''}" onclick="inpTap()">${tp?esc(tp):wait?'<span style="color:#aaa">Tap to reply…</span>':'<span style="color:#aaa">Ren Susu is typing…</span>'}</div><span>☺</span>${tp?'<div class="snd" onclick="send()">Send</div>':'<span>⊕</span>'}`}
+function drawBar(){const b=$('#bar');if(b)b.innerHTML=barHTML(W.v)}
+function drawChat(){if(cur!='wx'||W.v=='l'||!$('#msgs'))return;const m=$('#msgs');m.innerHTML=chatBody(W.v)+(typing&&W.v=='s'?'<div class="r">'+av('s',38)+'<div class="bub typ"><i></i><i></i><i></i></div></div>':'');m.scrollTop=1e6;if(!(kt&&kt.on))drawBar()}
+const prev=k=>{const l=[...CH[k].h].reverse().find(m=>m.x);return l?fx(k,l):''};
+function wxView(){if(W.v=='l')return `<div class="v wx">${hd(['','' ],'WeChat','⊕')}<div class="bd">${['s','Y','L','G'].map(k=>`<div class="row" onclick="W.v='${k}';keep();rr();${k=='s'?'enterSusu();':'drawChat();'}drawChat()">${av(k,48)}<div class="m"><div>${CH[k].n}</div><div>${esc(prev(k))}</div></div><div class="rt">${[...CH[k].h].reverse().find(m=>m.t)?.t||''}${unread[k]?'<br><b style="background:#fa5151;color:#fff;border-radius:9px;padding:0 6px;font-size:11px">1</b>':''}</div></div>`).join('')}</div><div class="tab"><span>💬<br>Chats</span><span>👥<br>Contacts</span><span>🧭<br>Discover</span><span>👤<br>Me</span></div></div>`;
+return `<div class="v wx">${hd(['‹ Chats',"W.v='l';hideKB();rr()"],`<span onclick="${CH[W.v].grp?"toast('Members (5): Murong Qingyi, Head Nurse Zhou, Dr. Lin, Xiao Chen (Resident), Nurse Wang')":''}">${CH[W.v].n}${CH[W.v].grp?' (5)':''}</span>`,'···')}<div class="msgs" id="msgs">${chatBody(W.v)}</div><div class="bar" id="bar">${barHTML(W.v)}</div></div>`}
+/* ---------- calls ---------- */
+const TR={c1:parse(`s|Hello? Why you call me
+q|Do you want me to bought something to home?
+s|Soymilk, can you bring two home? I’ve been craving for it but I can’t found one in Beicheng
+q|Two? for who?
+s|You. You don’t want it?
+q|Oh. I want it. Okay then, I’ll stop by later and bought it home. If you are bored, in other rolm there is a paint, you can paint there
+s|Really? I didn’t know you paint
+q|I just buy it two days ago
+s|Thank you
+q|Mm. I’m back to work`),c2:parse(`s|Hello?
+q|You called me while I'm sitting right next door.
+s|I know. Isn't it convenient?
+q|Not particularly.
+s|You picked up, though.
+q|You would've kept calling.
+s|True.
+q|Have you taken your medicine?
+s|Yes.
+q|Brushed your teeth?
+s|Yes, Dad.
+q|Do you want me to hang up?
+s|No! Sorry. Keep talking.
+q|About what?
+s|Anything. Tell me about your day.
+q|You were there for most of it.
+s|I know, but you didn't tell me everything. You were quiet after lunch.
+q|Just tired.
+s|You should've told me. I wouldn't have asked you to dance so many times.
+q|You didn't make me do anything.
+s|Still. I don't want you to be tired because of me.
+q|Susu, I wanted to dance with you.
+q|You there?
+s|Yeah. I'm here.
+q|What happened?
+s|Nothing. I just wanted to hear you say that again.
+q|Go to sleep.
+s|You're so mean.
+q|And yet you called me.
+s|Because I like you.
+q|I know.
+s|You could say it back, you know.
+q|I like you too, Susu.
+s|Okay. I'm going to sleep now.
+q|Good.
+s|But don't hang up yet.
+q|I won't.
+s|And tomorrow, can we dance again?
+q|If you want to.
+s|I do.
+q|Then we'll dance tomorrow.
+s|Okay. Goodnight, Qingyi.
+q|Goodnight, Susu.
+s|Qingyi?
+q|Hm?
+s|I'm glad it was you.
+q|Me too.
+s|Okay. Now I'm really sleeping.
+q|Close your eyes.
+s|They're closed.
+q|Then why are you still talking?
+s|Because I wanted the last word.
+q|You can have it.
+s|Goodnight
+q|Goodnight.`)};
+const CL=`Jun 22|8:42 PM|Y|im
+Jun 22|8:44 PM|Y|i|6 min
+Jul 12|7:02 PM|Y|im
+Jul 22|9:54 PM|Y|i|8 min
+Jul 24|6:30 PM|L|im
+Jul 29|11:21 PM|Y|i|6 min
+Aug 19|11:50 PM|Y|im
+Sep 24|9:31 PM|s|w|23 min
+Oct 8|9:15 PM|s|om
+Oct 8|9:27 PM|L|i|4 min
+Nov 9|6:32 PM|Y|i|6 min`.split('\n').map(l=>{const a=l.split('|');return{d:a[0],t:a[1],n:a[2],ty:a[3],du:a[4]||''}}).reverse();
+function logCall(e){CL.unshift(e)}
+function phoneView(){return `<div class="v">${hd(['',''],'Recents')}<div class="bd"><div class="big">Recents</div>${CL.map((e,i)=>`<div class="row" onclick="callRow(${i})">${av(e.n,42)}<div class="m"><div style="${/m|d/.test(e.ty)&&e.ty!='w'?'color:#ff3b30':''}">${NM[e.n]}</div><div>${e.ty[0]=='i'?'↙ Incoming':e.ty[0]=='o'?'↗ Outgoing':'WeChat Audio'}${e.ty=='im'?' · Missed':e.ty=='om'?' · Not answered':e.ty=='id'?' · Declined':''}</div></div><div class="rt">${e.d}<br>${e.t}${e.du?'<br>'+e.du:''}</div></div>`).join('')}</div></div>`}
+function callRow(i){const e=CL[i];if(e.k)callScreen(e.n,TR[e.k]);else toast(/m|d/.test(e.ty)&&e.ty!='w'?'Missed / unanswered call — no connected screen':'No recorded dialogue for this call')}
+let cT=[],cs=0,cl=[],ci=0;
+function callScreen(n,lines,after){cl=lines;ci=0;cs=0;$('#call').innerHTML=`<div id="kp" style="display:none;position:absolute;inset:0;background:#16171f;z-index:2;flex-direction:column;align-items:center;padding-top:90px"><div id="dd" style="font-size:30px;height:44px;letter-spacing:3px"></div><div class="pk" style="margin-top:20px">${[1,2,3,4,5,6,7,8,9,'*',0,'#'].map(k=>`<b onclick="$('#dd').textContent+='${k}'">${k}</b>`).join('')}</div><p style="margin-top:24px;cursor:pointer" onclick="$('#kp').style.display='none'">Hide</p></div><div style="${bg(AV[n].i||0)};width:100px;height:100px;border-radius:50%;background-color:#888;display:flex;align-items:center;justify-content:center;font-size:30px">${AV[n].i?'':AV[n].t}</div><h2 style="margin-top:12px;font-weight:500">${NM[n]}</h2><p id="cst" style="opacity:.8">calling…</p><div id="ctr" onclick="showLine()"></div><div class="cg"><div class="cb" onclick="this.classList.toggle('on')"><i>🔇</i>mute</div><div class="cb" onclick="$('#kp').style.display='flex'"><i>⌗</i>keypad</div><div class="cb" onclick="this.classList.toggle('on')"><i>🔊</i>speaker</div><div class="cb" onclick="this.classList.toggle('on')"><i>＋</i>add call</div><div class="cb"><i>🎥</i>FaceTime</div><div class="cb" onclick="this.classList.toggle('on');$('#cst').textContent=this.classList.contains('on')?'● Recording · '+tm():tm()"><i>⏺</i>record</div></div><div class="red" onclick="endCall()">📞</div>`;$('#call').classList.add('o');
+setTimeout(()=>{cs=1;const t0=Date.now();window.tm=()=>{const s=Math.floor((Date.now()-t0)/1e3);return String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0')};cT.push(setInterval(()=>{const c=$('#cst');if(c&&!c.textContent.startsWith('●'))c.textContent=tm()},1000));showLine();cT.push(setInterval(showLine,2400))},1400)}
+function showLine(){if(!cs||ci>=cl.length)return;const m=cl[ci++],c=$('#ctr');if(!c)return;c.insertAdjacentHTML('beforeend',`<p class="${m.w=='q'?'q':''}"><small style="opacity:.7">${m.w=='q'?'Qingyi':'Susu'}</small><br>${esc(m.x)}</p>`);c.scrollTop=1e6}
+function endCall(){cT.forEach(clearInterval);cT=[];cs=0;$('#call').classList.remove('o');if(cur=='ph')rr()}
+function ring(){$('#call').innerHTML=`<div style="${bg(8)};width:110px;height:110px;border-radius:50%;animation:bl 1s infinite"></div><h2 style="margin-top:14px;font-weight:500">Ren Susu</h2><p style="opacity:.8">incoming call…</p><div style="margin-top:auto;display:flex;gap:90px"><div class="cb" onclick="declineCall()"><div class="red" style="margin:0 auto 4px">📞</div>Decline</div><div class="cb" onclick="acceptCall()"><div class="red grn" style="margin:0 auto 4px">📞</div>Accept</div></div>`;$('#call').classList.add('o')}
+function acceptCall(){logCall({d:'Dec 22',t:'9:26 PM',n:'s',ty:'i',du:'answered',k:'c2'});callScreen('s',TR.c2)}
+function declineCall(){logCall({d:'Dec 22',t:'9:26 PM',n:'s',ty:'id',du:''});$('#call').classList.remove('o');toast('Call declined — logged in Recents')}
+/* ---------- Twitter ---------- */
+const TW=[['Thu, Sept 10 · 11:52 PM','hour 14 of a shift. exhausted'],['Mon, Sept 14 · 3:00 AM','i forgot to check my mails. why did it says i have 2,318 unread?'],['Mon, Sept 14 · 3:16 AM','finished my 15 hours shift and someone on my email want to skinned me alive? say sike'],['Tue, Sept 15 · 11:37 AM','also she was crying. i could tell from the typos... i told her to let go of someone and she cried at her keyboard and then STILL got in the last word. i would like to sit down'],['Fri, Sept 18 · 10:14 PM','she asked if i have wechat and i said yes like a normal person. then i spent 3 full minutes deciding whether to add a profile pic'],['Sat, Sept 26 · 7:52 PM','asked a stranger on the internet how to stop wanting to hurt people. she answered in 4 messages like it was a normal thing to ask. no "are you ok." no "why." she just answered.'],['Mon, Oct 5 · 11:06 AM','she\'s never gone 2 days without answering. let alone 3'],['Sun, Dec 6 · 8:49 PM','i think i know that voice'],['Mon, Dec 7 · 1:41 AM','forecast says snow through the 20th. i checked. for medical reasons'],['Sun, Dec 20 · 7:45 AM','i have nothing to rant about today. thats suspicious. im taking my own vitals shes asleep on the couch with her leg up, a sketchbook on her chest, a pair of dancing shoes on the floor and a flower in the window. it bloomed at 3am and it was the first thing id kept alive']];
+const NEXT_TW=[]; /* add scripted tweets here as ['Mon, Dec 21 · 3:00 PM','text'] — they are only published when the reader taps Post */
+function xView(){return `<div class="v">${hd(['',''],'Home')}<div class="bd"><div style="padding:12px 16px;border-bottom:.5px solid #e5e5ea">${av('q',64)}<h3 style="margin-top:6px">Do not disturb me 🔒</h3><small style="color:#6b7480">@losteven · Private account</small><p style="margin:6px 0">i love my job</p><small><b>3</b> Following &nbsp; <b>0</b> Followers</small></div>${[...TW].reverse().map(t=>`<div class="tw">${av('q',40)}<div><b>Do not disturb me 🔒</b> <small style="display:inline">@losteven</small><small>${t[0]}</small><p>${esc(t[1])}</p><small>💬 0 &nbsp; 🔁 0 &nbsp; ♡ 0</small></div></div>`).join('')}</div><div class="fab" onclick="compose()">✎</div></div>`}
+function compose(){if(!NEXT_TW.length){toast('No scripted tweet is queued yet');return}const t=NEXT_TW[0];$('#app').insertAdjacentHTML('beforeend',`<div id="cp" class="v" style="z-index:9"><div class="hd"><a onclick="$('#cp').remove();hideKB()">Cancel</a><b></b><span><b id="pb" style="background:#1d9bf0;color:#fff;padding:5px 14px;border-radius:16px;opacity:.4">Post</b></span></div><div class="tw" style="border:0">${av('q',40)}<div id="ct" style="flex:1;font-size:18px;min-height:100px;color:#aaa" onclick="kbTap()">What is happening?!</div></div></div>`);showKB(t[1],$('#ct'),x=>{$('#ct').style.color='#000';const b=$('#pb');b.style.opacity=1;b.style.cursor='pointer';b.onclick=()=>{TW.push(NEXT_TW.shift());hideKB();rr()}})}
+/* ---------- Notes ---------- */
+const NT=[['chase tomorrow','Fri, Sept 11 · 12:14 AM','• bed 6 consent form\n• dr lin re fri OR list\n• mrs zhao, pre-auth, 2nd floor\n• call gege back (4 days now)\n• checking email'],['capitals??','Mon, Sept 14 · 7:55 AM','but a weird capitals in the middle of sentences… who capitalizes "The" halfway thru a line\n\nThe / Promise / Still / Stands / I\'m / Still / Waiting / For / Your / Reply\n\nthe promise still stands. im still waiting for your reply? she hid something in there on purpose. she left this for somebody else and it came to me'],['?????','Tue, Sept 15 · 11:12 AM','her first email had perfect grammar. even the threats had commas. this one has lots of typo. nobody writes like that unless she cant see the screen. did she… cry? was she crying when she wrote it?'],['address (don\'t lose this)','Sun, Sept 20 · 2:20 PM','Susu\'s address: No. 17, Lane 42, Wuyuan Road, Xuhui District, Nancheng.'],['what a person needs on crutches','Wed, Dec 9 · 7:40 AM','• stool in the kitchen so she can cook sitting\n• shower chair (rented, called the supplier at 6:30)\n• ice packs rotate every 2 hrs\n• move the rug in the hallway\n• tell the neighbors shes a friend not a patient'],['friday plan','Fri, Dec 11 · 3:12 AM','piazzolla, the bandoneon one. first tango piece i found at 3 am. i had insomnia. that\'s the reason, stop looking at it\n\nthe wheelchair wasnt in the plan. the knee wasnt in the plan either\n\nread up: a giro is a turn around a center point. normally two people on their feet. you can do it with one standing and one seated. i did the reading']];
+let NO=-1;
+const ntView=()=>NO<0?`<div class="v">${hd(['',''],'Folders')}<div class="bd"><div class="big">Notes</div>${[...NT.keys()].reverse().map(i=>`<div class="note" onclick="keep();NO=${i};rr()"><b>${NT[i][0]}</b><br><small>${NT[i][1].split(' · ')[0]} &nbsp; ${NT[i][2].slice(0,50).replace(/\n/g,' ')}…</small></div>`).join('')}</div></div>`:`<div class="v">${hd(['‹ Notes','NO=-1;rr()'],'')}<div class="bd"><small style="display:block;text-align:center;color:#8e8e93">${NT[NO][1]}</small><div class="pre"><b style="font-size:22px">${NT[NO][0]}</b>\n${esc(NT[NO][2])}</div></div></div>`;
+/* ---------- Safari ---------- */
+const SF=[['Thu, Oct 22 · 3:03 AM','how long is too long to wait for a text reply\n19 days no reply what does it mean\nis it ghosting if they have a reason'],['Sat, Dec 5 · 4:20 PM','how to plant gentian in a pot\ndo gentians survive on a balcony in Beicheng in december\nwhat does a dying gentian look like (so i know)\ngentian bloom how long'],['Wed, Dec 9 · 8:15 AM','wheelchair rental near me beijing\ncan you dance tango in a wheelchair\ngiro tango turn explained\nhow to make someone feel at home without making it weird'],['Fri, Oct 2 · 10:34 PM','gentian flower\ngentian where does it grow\ngentian blue or purple'],['Fri, Sept 18 · 10:06 PM','[baidu search] wechat add friend by id\n[baidu search] how long should you wait before accepting a friend request (i\'m the one sending it)'],['Mon, Sept 14 · 3:02 AM','how to bulk delete unread gmail\ngmail select all conversations not just this page\nwhy is gmail still sorting by newest']];
+const sfView=()=>`<div class="v">${hd(['‹',''],'Safari','⧉')}<div style="padding:0 14px 8px"><div style="background:#eeeef0;border-radius:11px;padding:9px;text-align:center;color:#555">🔒 History</div></div><div class="bd">${SF.map(s=>`<div class="h2" style="font-size:15px;color:#8e8e93">${s[0]}</div>${s[1].split('\n').map(q=>`<div class="row" style="cursor:default">🕘 ${esc(q)}</div>`).join('')}`).join('')}</div><div class="tab" style="font-size:20px"><span>‹</span><span>›</span><span>↑</span><span>📖</span><span>⧉</span></div></div>`;
+/* ---------- Mail ---------- */
+const EM=[{b:'i',s:'you absolute coward',d:'Mon, Sept 14 · 3:12 AM',x:`Lan,\nDon't think you can hide forever, you bastard. Where are you now, drinking gutter water? You must've stolen my money and run. Even The dogs on the street keep their Promise, but you? Everything that happened is your fault. Even if I cut off your hands and skin you alive it Still wouldn't be enough, and the pain Stands in my chest every single day. I hope you die a miserable death, you filthy dog.\n\nI'm not done. I'm Still Waiting for you to crawl back, you spineless thing, and not one of your excuses is good enough For me. Don't you dare act like Your silence is innocent.\n\nOne day I'll find you and you will Reply, on your knees. You should've died back then at that orphanage.\n\nR.`},
+{b:'s',s:'Re: you absolute coward',d:'Mon, Sept 14 · 8:30 AM',x:`The person you're looking for isn't here. This is the wrong inbox. This account haven’t been used by me for around 3 years because this is my burner. If you're really worried about her, report her missing to the authorities. Writing hate mail into the void won't find her.\n\nDr. Murong`},
+{b:'i',s:'Re: Re: you absolute coward',d:'Mon, Sept 14 · 9:47 PM',x:`Who are you? Why did you say I'm worried about her? How do you know I'm looking for her? Do you know her?`},
+{b:'s',s:'Re: Re: Re: you absolute coward',d:'Mon, Sept 14 · 11:20 PM',x:`I don't know her. I'm a doctor in Beicheng. I don't know you either. What I know is that your emails weren't written by someone who hates the person receiving them. The sentences don't hold together. On top it's all curses and underneath it reads like someone shaking. You also mention the orphanage twice. Is that where the two of you met?`},
+{b:'s',s:'(no subject)',d:'Sun, Nov 29 · 3:07 AM',x:`Susu, I don't know if you read this. You don't have to answer. I'm not going to chase you. I just want you to know that if you need anything, or nothing, I'm still here. I'm in the same city, the same clinic, the same stairwell. The pork is getting better.\n\nSincerely,\nQingyi.`},
+{b:'s',s:'I had a dream',d:'Sun, Dec 20 · 2:47 AM',x:`Susu, I had a dream last night, or this month, it's hard to say. I was in total darkness. I screamed for help and no one came. Slowly I stopped hoping to be saved and started hating everyone. It was the only warmth I had. Then you cut through the dark. The second I saw you I knew I couldn't hate everyone. Not completely. Not anymore.\n\nThank you for answering my call. I didn't know I was making one. The gentian is about to bloom. When it does, I have a gift I want to give you.\n\nSincerely,\nQingyi.`}];
+const rd=new Set(EM.map((e,i)=>i).filter(i=>EM[i].b=='s'));let MB='i',MO=-1,MQ='';
+const mlView=()=>{const R_='Ren Susu <susuphile@gmail.com>',S_='Solitary <aloner@gmail.com>';if(MO>=0){const e=EM[MO],f=e.b=='i'?R_:S_,t=e.b=='i'?S_:R_;return `<div class="v">${hd(['‹ '+(MB=='i'?'Inbox':'Sent'),'MO=-1;rr()'],'')}<div class="bd" style="padding:0 18px"><h2>${esc(e.s)}</h2><p style="margin:10px 0"><b>${esc(f)}</b><br><small style="color:#8e8e93">To: ${esc(t)}<br>${e.d}</small></p><div class="pre" style="padding:8px 0">${esc(e.x)}</div></div></div>`}
+const L=EM.map((e,i)=>[e,i]).filter(([e])=>e.b==MB&&(e.s+e.x).toLowerCase().includes(MQ.toLowerCase())).reverse();
+return `<div class="v">${hd(['',''],'')}<div class="bd"><div class="big">${MB=='i'?'Inbox':'Sent'}</div><div class="seg"><b class="${MB=='i'?'on':''}" onclick="MB='i';rr()">Inbox</b><b class="${MB=='s'?'on':''}" onclick="MB='s';rr()">Sent</b></div><input class="s" placeholder="Search" value="${esc(MQ)}" oninput="MQ=this.value;mlList()">${'<div id="ml">'+mlRows(L)+'</div>'}</div><div class="tab" style="font-size:12px">Updated Just Now</div></div>`};
+const mlRows=L=>L.length?L.map(([e,i])=>`<div class="row" onclick="keep();rd.add(${i});MO=${i};rr()">${rd.has(i)?'<span style="width:9px"></span>':'<span class="ud"></span>'}<div class="m"><div style="${rd.has(i)?'font-weight:400':''}">${e.b=='i'?'Ren Susu':'Solitary'}</div><div style="color:#000">${esc(e.s)}</div><div>${esc(e.x.slice(0,70))}</div></div><div class="rt">${e.d.split(' · ')[0].slice(5)}</div></div>`).join(''):'<p class="ro" style="padding:30px;text-align:center;color:#999">No emails</p>';
+function mlList(){const L=EM.map((e,i)=>[e,i]).filter(([e])=>e.b==MB&&(e.s+e.x).toLowerCase().includes(MQ.toLowerCase())).reverse();$('#ml').innerHTML=mlRows(L)}
+/* ---------- Photos ---------- */
+const PH=[[11,'January 22, 2026'],[12,'July 27, 2026'],[13,'August 13, 2026'],[14,'September 24, 2026'],[15,'September 27, 2026'],[16,'September 30, 2026'],[17,'October 6, 2026'],[18,'October 8, 2026'],[19,'October 13, 2026']];let PV=-1;
+const ptView=()=>{const o=[...PH.keys()].reverse();let last='',h='';o.forEach(i=>{const m=PH[i][1].replace(/ \d+,/,'');if(m!=last){h+=`${last?'</div>':''}<div class="h2" style="font-size:16px">${m}</div><div class="grid3">`;last=m}h+=`<div style="${bg(PH[i][0])}" onclick="keep();PV=${i};rr()"></div>`});h+='</div>';
+return `<div class="v">${hd(['',''],'Library')}<div class="bd"><div class="big">Photos</div>${h}</div><div class="tab"><span>🖼<br>Library</span><span>♡<br>For You</span><span>🗂<br>Albums</span><span>🔍<br>Search</span></div>${PV>=0?`<div class="ph3"><div class="hd"><a onclick="PV=-1;rr()">‹ Library</a><b>${PH[PV][1]}</b><span></span></div><div class="im" style="background-image:url(${IM[PH[PV][0]]})"></div><div style="display:flex;justify-content:space-between;padding:14px 30px 40px;font-size:26px"><span onclick="PV=Math.max(0,PV-1);rr()" style="cursor:pointer">‹</span><span onclick="PV=Math.min(8,PV+1);rr()" style="cursor:pointer">›</span></div></div>`:''}</div>`};
+/* ---------- Instagram ---------- */
+const U={sevenone:{n:'Murong Qingyi',f:'3,071',g:'11',b:'surgeon'},doublefour:{n:'Ren Susu',f:'2,144',g:'44',b:'i paint sometimes'}};
+const IP=[['sevenone',3,'Jun 25, 2026','',1121,0,''],['sevenone',4,'Sep 22, 2026','boredom',921,2,''],['sevenone',5,'Sep 27, 2026','writing',2310,23,''],['sevenone',6,'Dec 13, 2026','my luck has come 🍀',2333,32,''],['sevenone',7,'Dec 30, 2026','happy birthday to me',1203,47,'doublefour|Happy birthday, Mr. Lonely 🩷'],['doublefour',8,'Jun 2022','blep :p',1021,3,''],['doublefour',9,'Dec 17, 2026','happy happy happy',1723,12,''],['doublefour',10,'Dec 30, 2026','bday boy',1250,7,'sevenone|Thank you 🩵']];
+const ORD=[4,7,6,3,2,1,0,5],LK=new Set();let G={v:'f'};
+const igCard=(i,full)=>{const p=IP[i],l=LK.has(i);return `<div class="card"><div style="display:flex;gap:8px;align-items:center;cursor:pointer" onclick="keep();G={v:'p',u:'${p[0]}'};rr()">${av(p[0],32)}<b>${p[0]}</b></div><img src="${IM[p[1]]}" onclick="keep();G={v:'o',i:${i}};rr()"><div><span class="heart" onclick="LK.has(${i})?LK.delete(${i}):LK.add(${i});rr()">${l?'❤':'♡'}</span> 💬<br><b>${(p[4]+(l?1:0)).toLocaleString()} likes</b><br><b>${p[0]}</b> ${esc(p[3])}<br><small style="color:#8e8e93;cursor:pointer" onclick="keep();G={v:'o',i:${i}};rr()">${p[5]?'View all '+p[5]+' comments':'No comments'}</small><br><small style="color:#8e8e93">${p[2]}</small>${full&&p[6]?`<p style="margin-top:8px"><b>${p[6].split('|')[0]}</b> ${esc(p[6].split('|')[1])}</p>`:''}</div></div>`};
+const igTab=`<div class="tab" style="font-size:22px"><span onclick="G={v:'f'};rr()">🏠</span><span onclick="G={v:'s',q:''};rr()">🔍</span><span onclick="G={v:'p',u:'sevenone'};rr()">${av('sevenone',26)}</span></div>`;
+function igView(){let b='';if(G.v=='f')b=`${hd(['',''],'Instagram','')}<div class="bd">${ORD.map(i=>igCard(i)).join('')}</div>`;
+else if(G.v=='o')b=`${hd(['‹ Back',"G=G.u?{v:'p',u:G.u}:{v:'f'};rr()"],'Post')}<div class="bd">${igCard(G.i,1)}</div>`;
+else if(G.v=='p'){const u=G.u,d=U[u];b=`${hd(['‹',"G={v:'f'};rr()"],u)}<div class="bd"><div style="display:flex;gap:20px;align-items:center;padding:8px 16px">${av(u,78)}<div style="display:flex;gap:18px;text-align:center"><div><b>${IP.filter(p=>p[0]==u).length}</b><br>posts</div><div><b>${d.f}</b><br>followers</div><div><b>${d.g}</b><br>following</div></div></div><div style="padding:0 16px"><b>${d.n}</b><br>${d.b}<div style="background:#eeeef0;text-align:center;padding:7px;border-radius:8px;margin:10px 0;font-weight:600">Following ✓</div></div><div class="grid3">${ORD.filter(i=>IP[i][0]==u).map(i=>`<div style="${bg(IP[i][1])}" onclick="keep();G={v:'o',i:${i},u:'${u}'};rr()"></div>`).join('')}</div></div>`}
+else b=`${hd(['',''],'Search')}<input class="s" placeholder="Search accounts and captions" value="${esc(G.q||'')}" oninput="G.q=this.value;igS()"><div class="bd" id="igs">${igRes(G.q||'')}</div>`;
+return `<div class="v">${b}${igTab}</div>`}
+const igRes=q=>{q=q.toLowerCase();return Object.keys(U).filter(u=>!q||u.includes(q)||U[u].n.toLowerCase().includes(q)).map(u=>`<div class="row" onclick="G={v:'p',u:'${u}'};rr()">${av(u,44)}<div class="m"><div>${u}</div><div>${U[u].n}</div></div></div>`).join('')+(q?ORD.filter(i=>IP[i][3].toLowerCase().includes(q)).map(i=>`<div class="row" onclick="G={v:'o',i:${i}};rr()"><img src="${IM[IP[i][1]]}" width=44 height=44 style="object-fit:cover;border-radius:6px"><div class="m"><div>${IP[i][0]}</div><div>${esc(IP[i][3])}</div></div></div>`).join(''):'')};
+const igS=()=>$('#igs').innerHTML=igRes(G.q||'');
+/* ---------- Music ---------- */
+const SG=[['Angel Baby','Troye Sivan','2m6Ko3CY1qXNNja8AlugNc','#7a5af8'],['Loving You So Easy','HONNE','5RKb8NyPAqkr77LbcSOTLn','#e8795a'],['Loving You Girl','Peder Elias, Hkeem','4ShxDU7CHNQVi2wwgSdqfF','#2bb0a6'],['It Takes Two','Fiji Blue','5V7qLbZJNTwaEVbZADqofc','#d9558f'],['Winter Blossom','Dept, Ashley Alisha, nobody likes u pat','1ynuDDHKN7P7fmJEljdCLd','#5a8fe8']];
+const PL=[['I\'m so in loveeee','💗','linear-gradient(135deg,#ff9a9e,#fad0c4)'],['fallen petals lying at your door','🌸','linear-gradient(135deg,#d4a5c0,#f3e1ec)'],['songs to fall asleep','🌙','linear-gradient(135deg,#3b4a7a,#8c9bc9)'],['calming your nerves','🍃','linear-gradient(135deg,#a8d5c2,#e2f1e8)'],['jaZZ','🎷','linear-gradient(135deg,#4a3426,#b68a5a)'],['high euphoria alert','☀','linear-gradient(135deg,#ffd54a,#ff8a3d)']];
+let NP=-1,big=0;
+const muView=()=>`<div class="v">${hd(['',''],'')}<div class="bd" style="padding-bottom:170px"><div class="big">Listen Now</div><div class="h2" style="font-size:19px">Recently Played</div><div class="pl">${PL.map(p=>`<div><div class="cv" style="background:${p[2]}">${p[1]}</div><p>${p[0]}</p></div>`).join('')}</div><div class="h2" style="font-size:19px">Last Played</div>${SG.map((s,i)=>`<div class="row"><div class="cvs" style="background:${s[3]}">♪</div><div class="m" onclick="play(${i})"><div style="${NP==i?'color:#fa233b':''}">${s[0]}</div><div>${s[1]}</div></div><span style="color:#8e8e93">···</span></div>`).join('')}</div><div class="tab" style="font-size:10px"><span>▶<br>Listen Now</span><span>▦<br>Browse</span><span>📻<br>Radio</span><span>🎵<br>Library</span><span>🔍<br>Search</span></div></div>`;
+function play(i){NP=i;const s=SG[i];const mp=$('#mp');mp.style.display='block';mp.style.visibility='visible';
+if(mp.dataset.i!=i){mp.dataset.i=i;mp.innerHTML=`<div style="display:flex;gap:10px;align-items:center"><div class="cvs" style="background:${s[3]}">♪</div><div style="flex:1;min-width:0"><b>${s[0]}</b><br><small style="color:#666">${s[1]}</small></div><span style="cursor:pointer;font-size:20px" onclick="big=!big;$('#mp iframe').height=big?352:80">⌃</span></div><iframe height="80" src="https://open.spotify.com/embed/track/${s[2]}?utm_source=generator" allow="autoplay; encrypted-media; clipboard-write" loading="lazy"></iframe><small style="color:#888">Press play in the player (browsers require a tap). If it stays blank, Spotify embeds are blocked in this browser.</small>`}rr()}
+/* ---------- Weather ---------- */
+const wtView=()=>`<div class="v" style="background:linear-gradient(#4a6fa5,#1e3252);color:#fff;text-align:center;padding-top:120px"><h2 style="font-weight:400">Beicheng</h2><div style="font-size:70px;font-weight:200">❄</div><div style="font-size:24px">Snow</div><p style="margin-top:14px;opacity:.8">Snow expected through the 20th</p></div>`;
+const R={wx:wxView,ph:phoneView,x:xView,nt:ntView,sf:sfView,ml:mlView,pt:ptView,ig:igView,mu:muView,wt:wtView};
+</script></body></html>
